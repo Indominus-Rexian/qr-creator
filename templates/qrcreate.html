@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QR CODE</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/QR_icon.svg/1200px-QR_icon.svg.png">
+    </head>
+    <body style="background-color:rgb(0, 219, 248);">
+        <h1 style="color:rgb(0, 0, 0); font-size:50px;">QR CODE CREATOR</h1>
+        <h4 style="color:rgb(0, 38, 255); font-size:20px;"">Made with Love,Python and Flask</h4>
+        <p style="color:rgb(255, 0, 0); font-size:15px;">This QR CODE CREATOR is made with Python. Just add the link or any text below and hit Submit.<br>
+        You will be then redirected to the QR Code, Where you can just right click and save it.</p>
+        <form action="{{ url_for("qrcreate")}}" method="post" style="color: blueviolet;">
+            <label for="text">Text or Link:</label>
+            <input type="text" id="text" name="textqr" placeholder="Text or Link">
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <a style="color: deeppink;"href="https://github.com/Indominus-Rexian">My Github</a><br>
+        <a style="color: deeppink;" href="https://stackoverflow.com/users/14388242/dheeraj-tech">My Stack Overflow</a>    
+            
+    </body>
+
+</html>    
