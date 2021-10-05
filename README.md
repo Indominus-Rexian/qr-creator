@@ -30,6 +30,7 @@ And Voila!! You can know convert any text or link to a QR Code.
 ## Screenshots
 -----
 Home Page:
+(v1.01- Chnaged button to CSS)
 ![Home Page](https://github.com/Indominus-Rexian/qr-creator/blob/main/blob/main.png?raw=true)
 
 Results Page:
