@@ -6,15 +6,47 @@
         <title>QR CODE</title>
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/QR_icon.svg/1200px-QR_icon.svg.png">
     </head>
+    <style>
+        .button {
+          background: #0099ff;
+          background-image: -webkit-linear-gradient(top, #0099ff, #cc19cc);
+          background-image: -moz-linear-gradient(top, #0099ff, #cc19cc);
+          background-image: -ms-linear-gradient(top, #0099ff, #cc19cc);
+          background-image: -o-linear-gradient(top, #0099ff, #cc19cc);
+          background-image: linear-gradient(to bottom, #0099ff, #cc19cc);
+          -webkit-border-radius: 25;
+          -moz-border-radius: 25;
+          border-radius: 25px;
+          text-shadow: 1px 1px 3px #e000e0;
+          font-family: Georgia;
+          color: #f2fa00;
+          font-size: 20px;
+          padding: 10px 20px 10px 20px;
+          border: solid #000000 2px;
+          text-decoration: none;
+        }
+
+        .button:hover {
+          background: #b50000;
+          background-image: -webkit-linear-gradient(top, #b50000, #3498db);
+          background-image: -moz-linear-gradient(top, #b50000, #3498db);
+          background-image: -ms-linear-gradient(top, #b50000, #3498db);
+          background-image: -o-linear-gradient(top, #b50000, #3498db);
+          background-image: linear-gradient(to bottom, #b50000, #3498db);
+          text-decoration: none;
+        }
+        .button1 {border-radius: 2px;}        
+    </style>
+
     <body style="background-color:rgb(0, 219, 248);">
         <h1 style="color:rgb(0, 0, 0); font-size:50px;">QR CODE CREATOR</h1>
-        <h4 style="color:rgb(0, 38, 255); font-size:20px;"">Made with Love,Python and Flask</h4>
-        <p style="color:rgb(255, 0, 0); font-size:15px;">This QR CODE CREATOR is made with Python. Just add the link or any text below and hit Submit.<br>
+        <h4 style="color:rgb(0, 38, 255); font-size:20px;>Made with Love,Python and Flask</h4>
+        <p style="color:rgb(255, 0, 0); font-size:15px;>This QR CODE CREATOR is made with Python. Just add the link or any text below and hit Submit.<br>
         You will be then redirected to the QR Code, Where you can just right click and save it.</p>
         <form action="{{ url_for("qrcreate")}}" method="post" style="color: blueviolet;">
             <label for="text">Text or Link:</label>
             <input type="text" id="text" name="textqr" placeholder="Text or Link">
-            <button type="submit">Submit</button>
+            <button class="button button1"type="submit">Submit</button>
         </form>
         <br>
         <a style="color: deeppink;"href="https://github.com/Indominus-Rexian">My Github</a><br>
