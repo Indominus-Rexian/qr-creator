@@ -1,3 +1,2 @@
 flask
 qrcode
-gunicorn //You can leave gunicorn as it is for hosting my app on a website
